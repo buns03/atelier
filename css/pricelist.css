@@ -181,7 +181,7 @@ body {
   }
 
   .product {
-      width: 70%; /* Make product containers full width on mobile */
+      width: 80%; /* Make product containers full width on mobile */
   }
 
   .buttons button {
