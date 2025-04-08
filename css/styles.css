@@ -72,7 +72,7 @@ body {
 
   /* Carousel Text Area */
   .carousel {
-    flex: 1;
+    
     max-width: 70%;
   }
   
@@ -335,3 +335,137 @@ body {
   }
 }
 
+/* Mobile (600px and below) */
+@media (max-width: 600px) {
+  body {
+    overflow: auto; /* Re-enable scrolling if needed */
+  }
+
+  .main-container {
+    padding: 10px;
+    height: auto;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    gap: 10px;
+  }
+
+  .carousel {
+    max-width: 100%;
+    width: 100%;
+    max-height: 100px;
+    margin-bottom: 10px;
+  }
+  .carousel-indicator {
+    margin-top: 5px; /* Adjust this to bring dots closer to carousel */
+    display: flex;
+    justify-content: center; /* Center dots horizontally */
+    margin-bottom: 10px; /* Adjust the bottom margin for better spacing */
+  }
+
+  .dot {
+    height: 8px;
+    width: 8px;
+    margin: 0 3px;
+    background-color: #888;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s;
+    position: relative;
+    top: 0; /* Ensure dots are aligned properly */
+    margin-top: -20px;
+  }
+
+  .dot.active {
+    background-color: #2e2e2e;
+  }
+
+  .carousel-slide {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  .carousel-controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .carousel-btn {
+    flex: 0 0 auto;
+  }
+  
+  .avatar-container {
+    width: 100px; /* Adjust size of avatar */
+    height: 50%;
+    margin-left: 10px; /* Space between carousel and avatar */
+    margin-top: 50px;
+    align-self: center;
+  }
+
+  .avatar {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+  }
+
+  .content {
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .left-side,
+  .right-side {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .artworks {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .art-box {
+    width: 100%;
+    max-width: 250px;
+    height: 200px;
+  }
+
+  .buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Reduce the gap between buttons */
+    margin-top: -50px;
+  }
+
+  .buttons button,
+  .view-more {
+    width: 100%;
+    max-width: 300px;
+    font-size: 16px;
+  }
+
+  .view-more {
+    display: block;
+    margin: 10px auto; /* Reduced margin to bring the button closer */
+  }
+
+  .site-title {
+    font-size: 22px;
+  }
+
+  .carousel-btn {
+    font-size: 20px;
+    padding: 6px;
+  }
+}
