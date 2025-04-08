@@ -130,6 +130,7 @@ body {
   /* For mobile screens */
   .header {
       width: 80%; /* Further reduce header size on mobile */
+    height: 50px;
   }
 
   .site-title {
